@@ -1,5 +1,5 @@
 /// 一个 ImageSpec 是一个有序的数组，服务器按照 spec 的顺序处理
-#[derive(Clone, PartialEq, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message,Debug)]
 pub struct ImageSpec {
     #[prost(message, repeated, tag="1")]
     pub specs: ::prost::alloc::vec::Vec<Spec>,
